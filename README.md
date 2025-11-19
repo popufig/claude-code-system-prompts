@@ -1,6 +1,6 @@
 # Claude Code System Prompts
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.0.17](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.0.17) (October 15th, 2025).**
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.0.18](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.0.18) (October 15th, 2025).**
 
 Why multiple "system prompts?"
 
@@ -30,7 +30,7 @@ Sub-agents and utilities.
 
 #### Sub-agents
 
-- [Agent Prompt: Explore](./system-prompts/agent-prompt-explore.md) (**227** tks) - System prompt for the Explore subagent.
+- [Agent Prompt: Explore](./system-prompts/agent-prompt-explore.md) (**230** tks) - System prompt for the Explore subagent.
 - [Agent Prompt: Task tool](./system-prompts/agent-prompt-task-tool.md) (**294** tks) - System prompt given to the subagent spawned via the Task tool.
 
 ### Creation Assistants
