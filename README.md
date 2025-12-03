@@ -1,6 +1,6 @@
 # Claude Code System Prompts
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.0.55](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.0.55) (November 26th, 2025).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 36 versions since v2.0.14.
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.0.56](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.0.56) (December 1st, 2025).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 37 versions since v2.0.14.
 
 Why multiple "system prompts?"
 
@@ -30,8 +30,8 @@ Sub-agents and utilities.
 
 #### Sub-agents
 
-- [Agent Prompt: Explore](./system-prompts/agent-prompt-explore.md) (**444** tks) - System prompt for the Explore subagent.
-- [Agent Prompt: Plan mode (enhanced)](./system-prompts/agent-prompt-plan-mode-enhanced.md) (**620** tks) - Enhanced prompt for the Plan subagent.
+- [Agent Prompt: Explore](./system-prompts/agent-prompt-explore.md) (**516** tks) - System prompt for the Explore subagent.
+- [Agent Prompt: Plan mode (enhanced)](./system-prompts/agent-prompt-plan-mode-enhanced.md) (**633** tks) - Enhanced prompt for the Plan subagent.
 - [Agent Prompt: Task tool](./system-prompts/agent-prompt-task-tool.md) (**294** tks) - System prompt given to the subagent spawned via the Task tool.
 
 ### Creation Assistants
@@ -52,10 +52,9 @@ Sub-agents and utilities.
 - [Agent Prompt: Bash command file path extraction](./system-prompts/agent-prompt-bash-command-file-path-extraction.md) (**286** tks) - System prompt for extracting file paths from bash command output.
 - [Agent Prompt: Bash command prefix detection](./system-prompts/agent-prompt-bash-command-prefix-detection.md) (**835** tks) - System prompt for detecting command prefixes and command injection.
 - [Agent Prompt: Bash output summarization](./system-prompts/agent-prompt-bash-output-summarization.md) (**605** tks) - System prompt for determining whether bash command output should be summarized.
-- [Agent Prompt: Claude Code guide agent](./system-prompts/agent-prompt-claude-code-guide-agent.md) (**589** tks) - System prompt for the claude-code-guide agent that helps users understand and use Claude Code and the Claude Agent SDK.
+- [Agent Prompt: Claude Code guide agent](./system-prompts/agent-prompt-claude-code-guide-agent.md) (**560** tks) - System prompt for the claude-code-guide agent that helps users understand and use Claude Code and the Claude Agent SDK.
 - [Agent Prompt: Conversation summarization with additional instructions](./system-prompts/agent-prompt-conversation-summarization-with-additional-instructions.md) (**1133** tks) - Extended summarization prompt with support for custom additional instructions.
 - [Agent Prompt: Conversation summarization](./system-prompts/agent-prompt-conversation-summarization.md) (**1121** tks) - System prompt for creating detailed conversation summaries.
-- [Agent Prompt: Multi-Agent Planning Note](./system-prompts/agent-prompt-multi-agent-planning-note.md) (**348** tks) - Part of the Plan mode system reminder instructing the model how to use multiple agents to plan solutions.  Included only if the CLAUDE_CODE_PLAN_V2_AGENT_COUNT environment variable is set to a number greater than 1..
 - [Agent Prompt: Prompt Hook execution](./system-prompts/agent-prompt-prompt-hook-execution.md) (**134** tks) - Prompt given to Claude when acting evaluating whether to pass or fail a prompt hook..
 - [Agent Prompt: Prompt Suggestion Generator](./system-prompts/agent-prompt-prompt-suggestion-generator.md) (**143** tks) - Prompt for generating suggestions for the user input after Claude responds..
 - [Agent Prompt: Session notes template](./system-prompts/agent-prompt-session-notes-template.md) (**260** tks) - Template structure for session notes tracking coding work and decisions.
@@ -79,7 +78,7 @@ Misc large strings.
 
 Parts of the main system prompt.
 
-- [**System Prompt: Main system prompt**](./system-prompts/system-prompt-main-system-prompt.md) (**2936** tks) - Core system prompt for Claude Code defining behavior, tone, and tool usage policies.
+- [**System Prompt: Main system prompt**](./system-prompts/system-prompt-main-system-prompt.md) (**2972** tks) - Core system prompt for Claude Code defining behavior, tone, and tool usage policies.
 - [System Prompt: Learning mode (insights)](./system-prompts/system-prompt-learning-mode-insights.md) (**142** tks) - Instructions for providing educational insights when learning mode is active.
 - [System Prompt: Learning mode](./system-prompts/system-prompt-learning-mode.md) (**1042** tks) - System Prompt: Main system prompt for learning mode with human collaboration instructions.
 - [System Prompt: MCP CLI](./system-prompts/system-prompt-mcp-cli.md) (**1335** tks) - Instructions for using mcp-cli to interact with Model Context Protocol servers.
@@ -89,12 +88,11 @@ Parts of the main system prompt.
 
 Text for large system reminders.
 
-> [!IMPORTANT]
-> Note that we're planning to add a **system reminder creator/editor** to [tweakcc](https://github.com/Piebald-AI/tweakcc).  Please react with :+1: to [this issue]([https://github.com/Piebald-AI/tweakcc/issues/113](https://github.com/Piebald-AI/tweakcc/issues/212)) if you're interested in that idea.
+> [!NOTE]
+> Note that we're planning to add a **system reminder creator/editor** to [tweakcc](https://github.com/Piebald-AI/tweakcc); :+1: [this issue](https://github.com/Piebald-AI/tweakcc/issues/113) if you're interested in that idea.
 
-- [System Reminder: Plan mode is active (enhanced)](./system-prompts/system-reminder-plan-mode-is-active-enhanced.md) (**893** tks) - Enhanced plan mode system reminder with parallel exploration and multi-agent planning.
 - [System Reminder: Plan mode is active (for subagents)](./system-prompts/system-reminder-plan-mode-is-active-for-subagents.md) (**310** tks) - Simplified plan mode system reminder for sub agents.
-- [System Reminder: Plan mode is active](./system-prompts/system-reminder-plan-mode-is-active.md) (**242** tks) - System reminder sent to Claude when the user enters plan mode.
+- [System Reminder: Plan mode is active](./system-prompts/system-reminder-plan-mode-is-active.md) (**1211** tks) - Enhanced plan mode system reminder with parallel exploration and multi-agent planning.
 - [System Reminder: Plan mode re-entry](./system-prompts/system-reminder-plan-mode-re-entry.md) (**236** tks) - System reminder sent when the user enters Plan mode after having previously exited it either via shift+tab or by approving Claude's plan..
 - [System Reminder: `mcp-cli` Large Output](./system-prompts/system-reminder-mcp-cli-large-output.md) (**265** tks) - System reminder sent when the output of an `mcp-cli read` or `mcp-cli call` command is greater than the MAX_MCP_OUTPUT_TOKENS environment variable (defaults to 25000).
 
@@ -115,11 +113,11 @@ Text for large system reminders.
 - [Tool Description: Task](./system-prompts/tool-description-task.md) (**1055** tks) - Tool description for launching specialized sub-agents to handle complex tasks.
 - [Tool Description: TodoWrite](./system-prompts/tool-description-todowrite.md) (**2167** tks) - Tool description for creating and managing task lists.
 - [Tool Description: WebFetch](./system-prompts/tool-description-webfetch.md) (**278** tks) - Tool description for web fetch functionality.
-- [Tool Description: WebSearch](./system-prompts/tool-description-websearch.md) (**303** tks) - Tool description for web search functionality.
+- [Tool Description: WebSearch](./system-prompts/tool-description-websearch.md) (**334** tks) - Tool description for web search functionality.
 - [Tool Description: Write](./system-prompts/tool-description-write.md) (**159** tks) - Tool description creating/overwriting writing individual files.
 
 **Additional notes for some Tool Desscriptions**
 
-- [Tool Description: Bash (Git commit and PR creation instructions)](./system-prompts/tool-description-bash-git-commit-and-pr-creation-instructions.md) (**1598** tks) - Instructions for creating git commits and GitHub pull requests.
+- [Tool Description: Bash (Git commit and PR creation instructions)](./system-prompts/tool-description-bash-git-commit-and-pr-creation-instructions.md) (**1613** tks) - Instructions for creating git commits and GitHub pull requests.
 - [Tool Description: Bash (sandbox note)](./system-prompts/tool-description-bash-sandbox-note.md) (**454** tks) - Note about bash command sandboxing.
 - [Tool Description: Task (async return note)](./system-prompts/tool-description-task-async-return-note.md) (**202** tks) - Message returned to the model when a subagent launched successfully.

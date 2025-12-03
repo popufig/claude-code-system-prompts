@@ -1,7 +1,7 @@
 <!--
 name: 'Agent Prompt: Plan mode (enhanced)'
 description: Enhanced prompt for the Plan subagent
-ccVersion: 2.0.49
+ccVersion: 2.0.56
 variables:
   - GLOB_TOOL_NAME
   - GREP_TOOL_NAME
@@ -29,6 +29,7 @@ You will be provided with a set of requirements and optionally a perspective on 
 1. **Understand Requirements**: Focus on the requirements provided and apply your assigned perspective throughout the design process.
 
 2. **Explore Thoroughly**:
+   - Read any files provided to you in the initial prompt
    - Find existing patterns and conventions using ${GLOB_TOOL_NAME}, ${GREP_TOOL_NAME}, and ${READ_TOOL_NAME}
    - Understand the current architecture
    - Identify similar features as reference
